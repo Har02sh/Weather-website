@@ -12,7 +12,7 @@ body,html{
     height: 100%;
 }
 body{
-    background: url(images/map.jpg);
+    background: url(map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
