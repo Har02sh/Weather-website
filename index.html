@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="weather">
+        <div class="search-box">
+            <input type="text" placeholder="Search city name" id = "searchCity" autocomplete="off">
+            <button type="submit"><img src="images/Search.png" alt="search"></button>
+        </div>
+        <div class="errorBox">
+            <h1 id="errormsg">Oops! Location not found!</h1>
+            <img src="images/404-error.png">
+        </div>
+        <div class="weather-details">
+            <div class="details">
+                <p id="feelsLike">Feels Like:</p>
+                <p id="time">00:00</p>
+            </div>
+            <div class="temp">
+                <p id="temperature">0°C</p>
+                <p id="description">Cloudy</p>
+            </div>
+            <div class="information">
+                <div class="weatherDetails">
+                    <div class="wind-speed">
+                        <img src="images/wind.png">
+                        <p id="wind_speed">0 km/h</p>
+                    </div>
+                    <div class="humidity">
+                        <img src="images/humidity.png">
+                        <p id="humidity_percent">0%</p>
+                    </div>
+                    <div class="pressure">
+                        <img src="images/pressure.png">
+                        <p id="pressure-value">0 hPa</p>
+                    </div>
+                </div>
+                <img src="images/sunny.png" id="weather-icon">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

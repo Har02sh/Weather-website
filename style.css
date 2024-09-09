@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+body{
+    background: url(images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather{
+    width: 23%;
+    height: 10.6%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: rgba(255, 223, 100, 0.9) 0px 20px 40px -5px;
+    /* background-color:rgb(61, 10, 213); */
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-box{
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: rgba(233, 231, 231,0.2);
+    backdrop-filter: blur(4px) saturate(180%);
+    margin: auto;
+    border-radius: 30px;
+    padding: 7px;
+    padding-left: 12px;
+    margin-top: 15px;
+}
+.search-box input{
+    font-size: 15px;
+    flex-grow: 1;
+    color: #1d1c1c;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+}
+.search-box button{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: rgba(34, 237, 234, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover{
+    background-color: rgba(34, 237, 234, 1);
+}
+
+.search-box button:focus{
+    outline: none;
+}
+
+.search-box button img{
+    height: 26px;
+    width: 26px;
+}
+
+
+.weather-details{
+    flex-grow: 1;
+    margin: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.weather-details .details{
+    display: flex;
+    justify-content: space-around;
+    font-size:medium;
+}
+.weather-details .temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-details img{
+    height: 25px;
+    width: 25px;
+}
+
+
+#weather-icon{
+    height: 100px;
+    width: 100px;
+}
+.information{
+    display: flex;
+    justify-content: space-around;
+}
+
+.weatherDetails .wind-speed,.weather-details .humidity,.weather-details .pressure{
+    display: flex;
+    margin: 4px;
+}
+.information img{
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+#temperature{
+    font-size: 50px;
+    font-weight: 300;
+}
+#description{
+    font-size:18px;
+    font-weight:600;
+    /* color: rgb(252, 252, 252); */
+    margin-top: -8px;
+}
+
+.search-box input::placeholder{
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #3c3a3a;
+}
+
+.errorBox{
+    flex-grow: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 10px;
+}
+.errorBox img{
+    height:60%;
+    width: 50%;
+}
+.errorBox h1{
+    font-weight: 900;
+    color: white;
+    font-size: 19px;
+}
+
+
+
