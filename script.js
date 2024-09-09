@@ -30,7 +30,7 @@ function display(weather_data) {
         errorBox.style.display = "flex";
         detailBox.style.display = "none";
         weatherBox.style.boxShadow = "rgb(255, 0, 0, 0.8) 0px 20px 40px -5px";
-        background.style.background = "url(images/map.jpg)"
+        background.style.background = "url(map.jpg)"
         background.style.backgroundRepeat = "no-repeat";
         background.style.backgroundSize = "cover";
         background.style.backgroundAttachment = "fixed";
@@ -69,28 +69,28 @@ function updateWeatherIcon(weatherIcon) {
         case "Clouds":
         case "Haze":
         case "Mist":
-            weatherImg.src = "images/cloud.png";
+            weatherImg.src = "cloud.png";
             weatherBox.style.boxShadow = "rgb(135, 206, 235, 0.8) 0px 20px 40px -5px";
             break;
         case "Snow":
-            weatherImg.src = "images/snowflake.png";
+            weatherImg.src = "snowflake.png";
             weatherBox.style.boxShadow = "rgb(255, 250, 250, 0.8) 0px 20px 40px -5px";
             break;
         case "Rain":
         case "Drizzle":
-            weatherImg.src = "images/rain.png";
+            weatherImg.src = "rain.png";
             weatherBox.style.boxShadow = "rgb(61, 10, 213, 0.8) 0px 20px 40px -5px";
             break;
         case "Thunderstorm":
-            weatherImg.src = "images/thunderstorm.png";
+            weatherImg.src = "thunderstorm.png";
             weatherBox.style.boxShadow = "rgb(61, 10, 213, 0.8) 0px 20px 40px -5px";
             break;
         case "Fog":
-            weatherImg.src = "images/haze.png";
+            weatherImg.src = "haze.png";
             weatherBox.style.boxShadow = "rgb(255, 250, 250, 0.8) 0px 20px 40px -5px";
             break;
         default:
-            weatherImg.src = "images/sunny.png";
+            weatherImg.src = "sunny.png";
             weatherBox.style.boxShadow = "rgba(255, 223, 100, 0.8) 0px 20px 40px -5px";
     }
 }
