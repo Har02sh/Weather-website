@@ -24,7 +24,7 @@ function time(offsetInSeconds) {
 
 function display(weather_data) {
     weatherBox.style.height = "55%";
-    const url2 = `https://pixabay.com/api/?key=xxxxxxxx&q=${weather_data.name}&image_type=photo`
+    const url2 = `https://pixabay.com/api/?key=YOUR_OWN_API_KEY&q=${weather_data.name}&image_type=photo`
     if (weather_data.cod === '404') {
         // Show error message and hide weather details
         errorBox.style.display = "flex";
@@ -96,7 +96,7 @@ function updateWeatherIcon(weatherIcon) {
 }
 
 function weather(city_name) {
-    const apiKey = "xxxxxxxxxxxxxxxxxxx"
+    const apiKey = "YOUR_OWN_API_KEY"
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${apiKey}&units=metric`;
 
     fetch(url)
